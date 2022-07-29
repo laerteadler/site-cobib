@@ -56,6 +56,9 @@ body {
 }
 
 h1 {
+    max-width: 651px;
+    display: block;
+    margin: auto;
     background-color: var(--cor5);
     color: white;
     font-size: 20px;
@@ -65,7 +68,9 @@ h1 {
     margin-bottom: 20px;
 }
 
+#cabecalho {
 
+}
 
 a {
     color: var(--cor5);
@@ -80,14 +85,14 @@ a:hover{
 
 header {
     background-color: var(--cor5);
-    height: 110px;
+    height: 100px;
 	display: flex;
     text-align: center;
 }
 
 figure {
     background-color: white;
-    height: 110px;
+    height: 100px;
     width: 200px;
     align-content: center;
 }
@@ -98,22 +103,19 @@ header > figure > img {
 
 #cabecalho {
     min-width: 320px;
+    background-image: none;
+    color: white;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 100;
+    padding: 65px 0px 15px 12px;
+    margin: 0;
 }
 
 div > hr {
     margin-left: 10px;
     margin-right: 10px;
     color: #cecece;
-}
-
-div > h1 {
-    background-image: none;
-    color: white;
-    text-align: left;
-    font-size: 13px;
-    font-weight: 100;
-    padding: 15px 0px 10px 12px;
-    margin-bottom: 0px;
 }
 
 nav {
@@ -164,17 +166,32 @@ section {
     padding-bottom: 20px;
 }
 
+aside {
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+#section-box {
+    display: block;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    column-gap: 30px;
+    max-width: 651px;
+}
+
 .flex-item {
     height: 59px;
     width: 200px;
-    background-color: grey;
-    color: black;
+    margin: 0;
+    background-color: rgb(211, 211, 211);
+    color: var(--cor5);
     text-align: center;
     padding-top: 16px;
-}
-
-.servicos {
-    color: white;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .servicos:hover {
@@ -201,6 +218,30 @@ li:hover > p {
     background-color: red;
 }
 
+.item-box {
+    max-width: 450px;
+    display: block;
+    margin: auto;
+
+}
+
+ul > hr {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #cecece;
+}
+
+.tutorial {
+    background-color: white;
+    margin: 0;
+    padding: 10px 25px;
+    color: #0C326F;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+}
+
 .data {
     display: block;
 }
@@ -219,8 +260,7 @@ li:hover > p {
 }
 
 #datas-flex {
-    min-width: 320px; 
-    max-width: 550px;
+    max-width: 300px;
     display: block;
     margin: auto;
     display: flex;
@@ -231,7 +271,7 @@ li:hover > p {
 
 .evento {
     color: var(--cor5);
-    font-size: 18px;
+    font-size: 16px;
 }
 
 iframe {
@@ -250,7 +290,8 @@ footer {
 }
 
 footer > h1 {
-    padding-top: 40px;
+    margin: 20px 0px;
+    padding-top: 20px;
     font-size: 24px;
     text-align: left;
     background-image: none;
