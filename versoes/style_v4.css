@@ -1,0 +1,231 @@
+/* 
+header
+header > figure img
+header > h1
+
+main
+main > section id=”servicos”
+main > section id=”datas_importantes”
+main > section id=”canal_youtube”
+main > h1
+main > ul id="caixa_de_servicos"
+main > ul id="caixa_de_servicos" > li class="servicos"
+
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+*/
+
+
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Arimo';
+    src: url(../fontes/Arimo-VariableFont_wght.ttf) format(truetype);
+    font-weight: normal;
+}
+
+:root {
+	--cor1: #2F68D4;
+    --cor2: #516B9B;
+    --cor3: #1D4286;
+    --cor4: rgb(32, 173, 255);
+    --cor5: #2F3A60;
+
+    --fonte-padrao: 'Arimo', Arial, Verdana, sans-serif;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+#bg-site {
+    background: #e7e7e2 url(../imagens/bg.jpg) repeat left top;
+}
+
+#bg-content {
+    background-color: white;
+    border: 10px solid #F4F4F2;
+}
+
+body {
+    font-family: var(--fonte-padrao);
+    max-width: 1140px;
+    display: block;
+    margin: auto;
+}
+
+h1 {
+    background-color: var(--cor5);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 25px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: var(--cor5);
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--cor4);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header {
+    background-color: var(--cor5);
+    height: 110px;
+	display: flex;
+    text-align: center;
+}
+
+figure {
+    background-color: white;
+    height: 110px;
+    width: 200px;
+    align-content: center;
+}
+
+header > figure > img {
+    margin: auto;
+}
+
+div > hr {
+    margin-left: 10px;
+    color: #cecece;
+    width: 500px;
+}
+
+div > h1 {
+    background-image: none;
+    color: white;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 100;
+    padding: 15px 0px 10px 12px;
+    margin-bottom: 0px;
+}
+
+nav {
+    color: white;
+    text-align: left;
+	font-size: 20px;
+    padding-left: 12px;
+    padding-top: 10px;
+    max-width: 550px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > a {
+    color: white;
+}
+
+nav > a:hover{
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+section { 
+    margin-top: 20px;
+}
+
+#flex-servicos {
+    display: block;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap; /* é a soma de: flex-direction: row; flex-wrap: wrap; */
+    justify-content: space-around;
+    align-items: center;
+    /* align-content: ; espaçamento vertical*/
+    gap: 10px;
+    max-width: 651px;
+    padding-bottom: 20px;
+}
+
+.flex-item {
+    height: 59px;
+    width: 200px;
+    background-color: var(--cor2);
+    color: black;
+    text-align: center;
+    padding-top: 16px;
+}
+
+.servicos {
+    color: white;
+}
+
+.servicos:hover {
+    color: var(--cor4);
+}
+
+li > p {
+    display: none;
+}
+
+li:hover > p {
+    display: block;
+    color: blue;
+    background-color: red;
+}
+
+.data {
+    display: block;
+}
+
+.dia {
+    color: var(--cor1);
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.mes {
+    color: var(--cor3);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#datas-flex {
+    min-width: 320px; 
+    max-width: 550px;
+    display: block;
+    margin: auto;
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+    padding: 7px 5px;
+}
+
+.evento {
+    color: var(--cor5);
+    font-size: 18px;
+}
+
+iframe {
+    display: block;
+    min-width: 320px; 
+    max-width: 800px;
+    margin: auto;
+}
+
+footer {
+    margin-top: 0px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    background-color: var(--cor5);
+    color: white;
+}
+
+footer > h1 {
+    padding-top: 40px;
+    font-size: 24px;
+    text-align: left;
+    background-image: none;
+}
+
