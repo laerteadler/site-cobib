@@ -11,13 +11,19 @@
 <body id="bg-site">
     <div id="bg-content">
         <header>
-            <figure>
-                <img src="imagens/logo.png" alt="logomarca do curso de biblioteconomia da ufrn">
+            <figure id="logo-cobib">
+                <img src="imagens/logo biblioteconomia 72x72.png" alt="logomarca do curso de biblioteconomia da ufrn">
             </figure>
-            <div id="cabecalho">
-                <p>Curso de Biblioteconomia</p>
-                <p>CCSA / UFRN</p>  
-            </div> 
+            <div id="header-flex">
+                <div id="cabecalho">
+                    <p style="height: 25px;">CURSO DE BIBLIOTECONOMIA</p>
+                    <p style="font-size: 0.8em; color: black;">Centro de Ciências Sociais Aplicadas / UFRN</p>
+                    <a id="link_cabecalho" style="font-size: 0.8em;" href="http://www.graduacao.ufrn.br/biblioteconomia" target="_parent">www.graduacao.ufrn.br/biblioteconomia</a> </p>  
+                </div> 
+                <div id="brasao-ufrn">
+                    <img src="imagens/ufrn-brasao.png" alt="brasão da UFRN">
+                </div>
+            </div>
         </header>
         <main>
             <section id="servicos">
@@ -300,6 +306,34 @@
                 <p style="text-align: center; color: red">Não encontrou o serviço que está procurando? <a href="faq_da_biblio.html">Consulte nosso FAQ!</a></p>
             </section>
             <div id="section-box">
+                <aside id="tutoriais">
+                    <h1>Tutoriais</h1>
+                    <ul type="none" class="item-box">
+                        <li class="tutorial">
+                            <a href="https://sigaa.ufrn.br/sigaa/verProducao?idProducao=8125268&key=ff4b6b8655c9c7e71b5c2d5d442a30c9">Acesso às normas ABNT (BCZM)</a>
+                        </li>
+                        <hr>
+                        <li class="tutorial">
+                            <a href="https://sigaa.ufrn.br/sigaa/verProducao?idProducao=10407881&key=f6e48575eecef6b9c18356937e5b9804" target="_blank">Cadastramento dos comprovantes de Atividades Complementares</a>
+                        </li>  
+                        <hr>
+                        <li class="tutorial">
+                            <a href="https://sigaa.ufrn.br/sigaa/verProducao?idProducao=10611281&key=2f1285ea10b73b189dc210e4861c7f6b" target="_blank">Depósito do TCC</a>  
+                        </li>
+                        <hr>
+                        <li class="tutorial">
+                            <a href="https://sigaa.ufrn.br/sigaa/verProducao?idProducao=11006828&key=53457935cf3e10a64bcb0035c2e036e8" target="_blank">Pré-cadastro de estágio</a>  
+                        </li>
+                        <hr>
+                        <li class="tutorial">
+                            <a href="https://sigaa.ufrn.br/sigaa/verProducao?idProducao=8836295&key=53976bea39efe74bbe274683c60aa7ae" target="_blank">Suspensão de programa</a>  
+                        </li>
+                        <hr>
+                        <li class="tutorial">
+                            <a href="https://sigaa.ufrn.br/sigaa/verProducao?idProducao=8084591&key=7fb29b0501d7ff3d11922ac3de6c8cba" target="_blank">Trancamento de Disciplina</a> 
+                        </li>
+                    </ul>
+                </aside>
                 <aside id="datas-importantes">
                     <h1>Datas importantes</h1>
                     <div id="datas-flex">
@@ -355,48 +389,27 @@
                         </div>
                     </div> 
                 </aside>
-                <aside id="tutoriais">
-                    <h1>Tutoriais</h1>
-                    <ul type="none" class="item-box">
-                        <li class="tutorial">
-                            <a href="https://sigaa.ufrn.br/sigaa/verProducao?idProducao=8125268&key=ff4b6b8655c9c7e71b5c2d5d442a30c9">Acesso às normas ABNT (BCZM)</a>
-                        </li>
-                        <hr>
-                        <li class="tutorial">
-                            <a href="https://sigaa.ufrn.br/sigaa/verProducao?idProducao=10407881&key=f6e48575eecef6b9c18356937e5b9804" target="_blank">Cadastramento dos comprovantes de Atividades Complementares</a>
-                        </li>  
-                        <hr>
-                        <li class="tutorial">
-                            <a href="https://sigaa.ufrn.br/sigaa/verProducao?idProducao=10611281&key=2f1285ea10b73b189dc210e4861c7f6b" target="_blank">Depósito do TCC</a>  
-                        </li>
-                        <hr>
-                        <li class="tutorial">
-                            <a href="https://sigaa.ufrn.br/sigaa/verProducao?idProducao=11006828&key=53457935cf3e10a64bcb0035c2e036e8" target="_blank">Pré-cadastro de estágio</a>  
-                        </li>
-                        <hr>
-                        <li class="tutorial">
-                            <a href="https://sigaa.ufrn.br/sigaa/verProducao?idProducao=8836295&key=53976bea39efe74bbe274683c60aa7ae" target="_blank">Suspensão de programa</a>  
-                        </li>
-                        <hr>
-                        <li class="tutorial">
-                            <a href="https://sigaa.ufrn.br/sigaa/verProducao?idProducao=8084591&key=7fb29b0501d7ff3d11922ac3de6c8cba" target="_blank">Trancamento de Disciplina</a> 
-                        </li>
-                    </ul>
-                </aside>
             </div>
             <section id="canal_youtube">
                 <h1>Canal da Biblio</h1>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/4K58VJHLMxs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4K58VJHLMxs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </section>
         </main>
     </div>
-    <footer>
+    <footer id="rodape-1">
         <h1>Contatos</h1>
         <p style="font-size: 18px; padding-bottom: 3px;">
-            WhatsApp: 84 99193-6123<br>
-            Telefone: 3215-3516<br>
+            WhatsApp: 84 99193-6123
+            <br>
+            Telefone: 3215-3516
+            <br>
             E-mail: cobib.ufrn@gmail.com<br>
-        </p>
+        </p>   
+    </footer>
+    <footer id="rodape-2">
+        <a href="http://www.ufrn.br" target="_blank">UNIVERSIDADE FEDERAL DO RIO GRANDE DO NORTE - UFRN</a>
     </footer>
 </body>
 </html>
