@@ -114,7 +114,6 @@ header {
 
 figure {
     position: absolute;
-    height: 100px;
     width: 100px;
     align-content: center;
     padding-top: 0;
@@ -122,10 +121,7 @@ figure {
 }
 
 header > figure > img {
-    position: absolute;
-    left: 20%;
-    top: 20%;
-    transform: translate(-50% -50%);
+    margin: 20px;
 }
 
 #header-flex {
@@ -144,7 +140,7 @@ header > figure > img {
     text-align: left;
     font-size: 14px;
     font-weight: 100;
-    padding: 22px 0px 0px 12px;
+    padding-top: 22px;
     margin: 0;
 }
 
@@ -154,12 +150,22 @@ header > figure > img {
     padding-top: 10px;
 }
 
+nav {
+    margin-top: 7px;
+    padding-left: 15px;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    text-indent: 4px;
+}
+
 section { 
     margin-top: 20px;
 }
 
 #servicos {
-    margin-top: 0;
+    margin-top: 5px;
 }
 
 #flex-servicos {
